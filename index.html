@@ -56,16 +56,31 @@ nav a{
     color:white;
     text-decoration:none;
     font-weight:600;
-    font-size:16px;
     white-space:nowrap;
+    padding:8px 12px;
+    border-radius:10px;
     transition:.3s;
+    position:relative;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
+nav a:hover{
+    background:rgba(255,255,255,.15);
+}
+
+nav a.active{
+    color:#38bdf8;
+    background:rgba(56,189,248,.15);
+}
+
+nav a.active::after{
+    content:"";
+    position:absolute;
+    left:10px;
+    right:10px;
+    bottom:-8px;
+    height:3px;
+    background:#38bdf8;
+    border-radius:10px;
 }
 
 nav a:hover{
@@ -508,6 +523,32 @@ Xem bài tập
 </p>
 
 </footer>
+<script>
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav a");
 
+window.addEventListener("scroll", () => {
+
+    let current = "";
+
+    sections.forEach(section => {
+
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.clientHeight;
+
+        if(scrollY >= sectionTop){
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove("active");
+
+        if(link.getAttribute("href") === "#" + current){
+            link.classList.add("active");
+        }
+    });
+});
+</script>
 </body>
 </html>
