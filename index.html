@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Đinh Đức Thái Tuấn | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,23,42,0.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:center;
+padding:20px;
+gap:30px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+section{
+min-height:100vh;
+padding:100px 10%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero img{
+width:260px;
+height:260px;
+object-fit:cover;
+border-radius:50%;
+border:6px solid #38bdf8;
+box-shadow:0 0 30px #38bdf8;
+}
+
+.hero h1{
+font-size:3rem;
+margin-top:20px;
+}
+
+.hero h2{
+color:#38bdf8;
+font-weight:400;
+margin-top:10px;
+}
+
+.hero p{
+margin-top:15px;
+max-width:700px;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.title{
+font-size:2.5rem;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+.about-box{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+max-width:800px;
+width:100%;
+}
+
+.about-box p{
+margin:15px 0;
+font-size:18px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+width:100%;
+max-width:900px;
+}
+
+.skill{
+background:#1e293b;
+padding:25px;
+text-align:center;
+border-radius:15px;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+background:#38bdf8;
+color:black;
+}
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+width:100%;
+max-width:1100px;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card h3{
+color:#38bdf8;
+margin-bottom:15px;
+}
+
+.timeline{
+max-width:800px;
+width:100%;
+}
+
+.timeline-item{
+background:#1e293b;
+padding:20px;
+margin-bottom:20px;
+border-left:5px solid #38bdf8;
+border-radius:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+background:#020617;
+padding:20px;
+text-align:center;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero img{
+width:200px;
+height:200px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="#home">Trang Chủ</a>
+<a href="#about">Giới Thiệu</a>
+<a href="#skills">Kỹ Năng</a>
+<a href="#projects">Dự Án</a>
+<a href="#timeline">Học Tập</a>
+<a href="#contact">Liên Hệ</a>
+</nav>
+</header>
+
+<section id="home">
+
+<div class="hero">
+
+<img src="avatar.jpg" alt="avatar">
+
+<h1>Đinh Đức Thái Tuấn</h1>
+
+<h2>Sinh viên Công nghệ Thông tin</h2>
+
+<p>
+Chào mừng đến với Portfolio cá nhân của tôi.
+Tôi yêu thích công nghệ, lập trình và phát triển website hiện đại.
+</p>
+
+<a href="#about" class="btn">
+Khám phá thêm
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">Giới Thiệu</h2>
+
+<div class="about-box">
+
+<p><strong>Họ tên:</strong> Đinh Đức Thái Tuấn</p>
+
+<p><strong>Lớp:</strong> 25GT2</p>
+
+<p><strong>MSSV:</strong> 25090963</p>
+
+<p><strong>Ngành:</strong> Công nghệ Thông tin</p>
+
+<p>
+Mục tiêu của tôi là trở thành lập trình viên chuyên nghiệp,
+không ngừng học hỏi và phát triển kỹ năng trong lĩnh vực công nghệ.
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Kỹ Năng</h2>
+
+<div class="skills">
+
+<div class="skill">HTML5</div>
+
+<div class="skill">CSS3</div>
+
+<div class="skill">JavaScript</div>
+
+<div class="skill">C++</div>
+
+<div class="skill">GitHub</div>
+
+<div class="skill">Responsive Design</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Dự Án</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Portfolio Cá Nhân</h3>
+<p>Website giới thiệu bản thân với giao diện hiện đại.</p>
+</div>
+
+<div class="card">
+<h3>Website Quản Lý Sinh Viên</h3>
+<p>Hệ thống lưu trữ và quản lý thông tin sinh viên.</p>
+</div>
+
+<div class="card">
+<h3>Website Bán Hàng</h3>
+<p>Giao diện thương mại điện tử đơn giản bằng HTML/CSS.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="timeline">
+
+<h2 class="title">Quá Trình Học Tập</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>2025</h3>
+<p>Bắt đầu theo học ngành Công nghệ Thông tin.</p>
+</div>
+
+<div class="timeline-item">
+<h3>Mục tiêu</h3>
+<p>Trở thành lập trình viên Full-Stack chuyên nghiệp.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Liên Hệ</h2>
+
+<div class="contact">
+
+<p>Đinh Đức Thái Tuấn</p>
+
+<p>Lớp 25GT2</p>
+
+<p>MSSV: 25090963</p>
+
+<p>Email: your-email@gmail.com</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2025 Đinh Đức Thái Tuấn | Portfolio Website
+</p>
+
+</footer>
+
+</body>
+</html>
