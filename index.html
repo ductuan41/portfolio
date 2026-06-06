@@ -318,7 +318,54 @@ font-size:16px;
 font-weight:600;
 letter-spacing:.5px;
 }
+.hero{
+position:relative;
+overflow:hidden;
+}
 
+.ai-circle{
+position:absolute;
+border-radius:50%;
+filter:blur(60px);
+opacity:.25;
+pointer-events:none;
+animation:float 8s ease-in-out infinite;
+}
+
+.ai-circle-1{
+width:220px;
+height:220px;
+background:#38bdf8;
+top:80px;
+left:-50px;
+}
+
+.ai-circle-2{
+width:180px;
+height:180px;
+background:#818cf8;
+top:200px;
+right:-40px;
+animation-delay:2s;
+}
+
+.ai-circle-3{
+width:150px;
+height:150px;
+background:#c084fc;
+bottom:20px;
+left:20%;
+animation-delay:4s;
+}
+
+@keyframes float{
+0%,100%{
+transform:translateY(0);
+}
+50%{
+transform:translateY(-20px);
+}
+}
 @media(max-width:768px){.hero h1{
     font-size:3rem;
 }
@@ -515,7 +562,9 @@ padding:40px;
 
 <section id="home">
 <div class="hero">
-<img src="avatar.jpg" alt="avatar">
+<div class="ai-circle ai-circle-1"></div>
+<div class="ai-circle ai-circle-2"></div>
+<div class="ai-circle ai-circle-3"></div>
 
 <h1>Đinh Đức Thái Tuấn</h1>
 
