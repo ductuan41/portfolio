@@ -59,6 +59,40 @@ transition:.3s;
 background:#2563eb;
 color:white;
 }
+  .nav-buttons{
+display:flex;
+justify-content:space-between;
+gap:15px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.nav-buttons a{
+padding:12px 22px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.prev-btn{
+background:#e2e8f0;
+color:#334155;
+}
+
+.home-btn{
+background:#38bdf8;
+color:white;
+}
+
+.next-btn{
+background:#2563eb;
+color:white;
+}
+
+.nav-buttons a:hover{
+transform:translateY(-3px);
+}
 </style>
 
 </head>
@@ -134,11 +168,20 @@ target="_blank">
 
 <br><br>
 
-<a href="index.html" class="back-btn">
-🏠 Quay lại Portfolio
+<div class="nav-buttons">
+
+<a href="bai2.html" class="prev-btn">
+⬅ Bài 2
+</a>
+
+<a href="index.html" class="home-btn">
+🏠 Trang chủ
+</a>
+
+<a href="bai4.html" class="next-btn">
+Bài 4 ➜
 </a>
 
 </div>
-
 </body>
 </html>
