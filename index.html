@@ -27,7 +27,6 @@ background:linear-gradient(
 #dbeafe,
 #ede9fe
 );
-);
 color:#1e293b;
 line-height:1.7;
 letter-spacing:0;
@@ -36,20 +35,33 @@ letter-spacing:0;
 header{
 position:fixed;
 top:0;
-width:100%;
+left:0;
+right:0;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 40px;
+
 background:rgba(15,23,42,0.95);
 backdrop-filter:blur(10px);
+
 z-index:1000;
 }
 
+.logo{
+font-size:24px;
+font-weight:800;
+color:#38bdf8;
+white-space:nowrap;
+}
+
 nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:20px;
-    padding:18px;
-    flex-wrap:nowrap;
-    overflow-x:auto;
+display:flex;
+align-items:center;
+gap:20px;
+padding:18px 0;
 }
 
 nav a{
@@ -390,10 +402,16 @@ transition:0.3s;
 }
 transform:scale(1.05);
 }
-    .summary-section{
-    max-width:1000px;
-    margin:0 auto;
-    text-align:center;
+   .summary-section{
+max-width:1000px;
+margin:0 auto;
+}
+
+.summary-section .card{
+max-width:900px;
+margin:auto;
+text-align:left;
+padding:40px;
 }
 
 .summary-section .card{
@@ -433,15 +451,20 @@ transform:scale(1.05);
 </head>
 
 <body>
-
 <header>
+
+<div class="logo">
+Đinh Đức Thái Tuấn
+</div>
+
 <nav>
 <a href="#home">Trang Chủ</a>
 <a href="#about">Giới Thiệu</a>
 <a href="#projects">Bài tập</a>
-<a href="#timeline"> Tổng kết </a>
+<a href="#timeline">Tổng kết</a>
 <a href="#contact">Liên Hệ</a>
 </nav>
+
 </header>
 
 <section id="home">
@@ -578,28 +601,40 @@ Nghiên cứu các nguyên tắc đạo đức và trách nhiệm khi ứng dụ
 
 </section>
 
-    <h2 class="title">🎯 Tổng Kết</h2>
-    <div class="summary-section">
+    <section id="timeline">
 
-    <div class="card">
-        <h3>Kết quả đạt được</h3>
+<h2 class="title">🎯 Tổng Kết</h2>
 
-        <p>
-            Trong quá trình học tập, em đã hoàn thành đầy đủ 6 bài,
-            rèn luyện kỹ năng tìm kiếm thông tin, làm việc nhóm,
-            sử dụng AI hỗ trợ học tập và xây dựng website Portfolio cá nhân.
-        </p>
+<div class="summary-section">
 
-        <p>
-            Các bài tập giúp tôi nâng cao tư duy công nghệ,
-            kỹ năng số và khả năng tự học trong môi trường đại học.
-        </p>
+<div class="card">
 
-        <p>
-            Em sẽ tiếp tục phát triển các kỹ năng lập trình,
-            thiết kế web và ứng dụng AI vào học tập cũng như công việc trong tương lai.
-        </p>
-  </div>
+<h3>📌 Kết quả đạt được</h3>
+
+<p>
+Trong quá trình học tập môn Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo,
+em đã hoàn thành đầy đủ 6 bài thực hành và xây dựng thành công website Portfolio cá nhân.
+</p>
+
+<p>
+Thông qua các bài tập, em đã rèn luyện được kỹ năng quản lý dữ liệu,
+tìm kiếm và đánh giá thông tin học thuật, làm việc nhóm trên môi trường số,
+thiết kế Prompt hiệu quả cũng như ứng dụng các công cụ AI vào học tập và sáng tạo nội dung.
+</p>
+
+<p>
+Đặc biệt, em hiểu rõ hơn về việc sử dụng AI một cách có trách nhiệm,
+đảm bảo tính minh bạch và đạo đức trong học tập và nghiên cứu.
+</p>
+
+<p>
+Những kiến thức và kỹ năng đạt được sẽ là nền tảng quan trọng giúp em tiếp tục phát triển
+năng lực công nghệ số, khả năng tự học và ứng dụng AI vào công việc trong lĩnh vực
+Quản lý Giải trí và Sự kiện trong tương lai.
+</p>
+
+</div>
+
 </div>
 </section>
 <section id="contact">
@@ -618,10 +653,10 @@ Nghiên cứu các nguyên tắc đạo đức và trách nhiệm khi ứng dụ
 
 </section>
 
+<footer>
 <p>
-© 2026 Đinh Đức Thái Tuấn • Portfolio học tập 
+© 2026 Đinh Đức Thái Tuấn • Portfolio học tập
 </p>
-
 </footer>
 <script>
 const sections = document.querySelectorAll("section");
