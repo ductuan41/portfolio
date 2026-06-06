@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -16,6 +17,10 @@ color:#1e293b;
 line-height:1.8;
 }
 
+h1{
+margin-bottom:30px;
+}
+
 .card{
 background:white;
 padding:30px;
@@ -31,8 +36,15 @@ background:#38bdf8;
 color:white;
 text-decoration:none;
 border-radius:10px;
+font-weight:600;
+transition:.3s;
 }
-    .back-btn{
+
+.btn:hover{
+opacity:.9;
+}
+
+.back-btn{
 display:inline-block;
 padding:12px 20px;
 background:white;
@@ -48,27 +60,12 @@ transition:.3s;
 background:#2563eb;
 color:white;
 }
-
-.btn{
-display:inline-block;
-margin-top:20px;
-padding:12px 20px;
-background:#38bdf8;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:600;
-}
-
-.btn:hover{
-opacity:.9;
-}
 </style>
-</head>
 
+</head>
 <body>
 
-<h1>📘 Bài 3: Viết Prompt hiệu quả cho tác vụ học tập</h1>
+<h1>📘 Bài 3: Kỹ thuật Prompt Engineering cho học tập</h1>
 
 <div class="card">
 
@@ -81,58 +78,64 @@ Phát triển kỹ năng viết prompt hiệu quả để tận dụng tối đa
 <h2>II. Mô tả</h2>
 
 <p>
-Chọn một tác vụ học tập (ví dụ: tóm tắt giáo trình bài học, lên dàn ý thuyết trình) và sử dụng một công cụ AI như ChatGPT, Gemini hoặc các chatbot AI khác. Viết một prompt ban đầu (chưa tối ưu) và một phiên bản prompt đã được cải thiện để so sánh kết quả.
+Lựa chọn một số tác vụ học tập phổ biến và sử dụng công cụ AI như ChatGPT hoặc Gemini để thử nghiệm các phiên bản prompt khác nhau, từ đó đánh giá hiệu quả và rút ra nguyên tắc viết prompt tối ưu.
 </p>
 
 <h2>III. Quá trình thực hiện</h2>
 
 <ol>
-    <li>
-        Chọn 3 tác vụ học tập phổ biến:
-        <ul>
-            <li>Tóm tắt một bài đọc hoặc tài liệu học thuật.</li>
-            <li>Giải thích một khái niệm phức tạp.</li>
-            <li>Tạo bộ câu hỏi ôn tập cho một chủ đề.</li>
-        </ul>
-    </li>
 
-    <li>
-        Với mỗi tác vụ, xây dựng 3 phiên bản prompt:
-        <ul>
-            <li>Prompt cơ bản (đơn giản, ngắn gọn).</li>
-            <li>Prompt cải tiến (chi tiết hơn, có cấu trúc rõ ràng).</li>
-            <li>Prompt nâng cao (sử dụng các kỹ thuật Prompt Engineering như Role Prompting, Chain of Thought, Few-shot Examples).</li>
-        </ul>
-    </li>
+<li>
+Lựa chọn 3 tác vụ học tập phổ biến:
+<ul>
+<li>Tóm tắt tài liệu học thuật.</li>
+<li>Giải thích một khái niệm phức tạp.</li>
+<li>Tạo bộ câu hỏi ôn tập cho một chủ đề.</li>
+</ul>
+</li>
 
-    <li>
-        Thử nghiệm các prompt bằng công cụ AI như ChatGPT và ghi nhận kết quả trả về.
-    </li>
+<li>
+Đối với mỗi tác vụ, xây dựng 3 phiên bản prompt:
+<ul>
+<li>Prompt cơ bản (ngắn gọn).</li>
+<li>Prompt cải tiến (chi tiết hơn, có cấu trúc).</li>
+<li>Prompt nâng cao sử dụng các kỹ thuật Prompt Engineering như Role Prompting, Chain of Thought hoặc Few-shot Learning.</li>
+</ul>
+</li>
 
-    <li>
-        So sánh chất lượng đầu ra giữa các loại prompt và phân tích nguyên nhân dẫn đến sự khác biệt.
-    </li>
+<li>
+Thử nghiệm các prompt trên công cụ AI và ghi nhận kết quả trả về.
+</li>
 
-    <li>
-        Tổng hợp các nguyên tắc và mẹo viết prompt hiệu quả dựa trên kết quả thử nghiệm.
-    </li>
+<li>
+So sánh chất lượng đầu ra giữa các loại prompt về độ chính xác, tính đầy đủ và mức độ phù hợp với yêu cầu.
+</li>
+
+<li>
+Phân tích nguyên nhân giúp các prompt nâng cao cho kết quả tốt hơn so với prompt cơ bản.
+</li>
+
+<li>
+Tổng hợp các nguyên tắc và mẹo viết prompt hiệu quả dựa trên kết quả thực nghiệm.
+</li>
+
 </ol>
 
 <h2>IV. Kết quả đạt được</h2>
 
 <p>
-Sau khi hoàn thành bài tập, tôi hiểu rõ hơn về cách xây dựng prompt hiệu quả để khai thác tối đa khả năng của AI. Tôi nhận thấy rằng các prompt được thiết kế chi tiết, có ngữ cảnh rõ ràng và yêu cầu cụ thể thường mang lại kết quả chính xác, đầy đủ và hữu ích hơn so với các prompt đơn giản.
+Sau khi hoàn thành bài thực hành, tôi hiểu rõ hơn về vai trò của Prompt Engineering trong việc khai thác hiệu quả các công cụ AI. Tôi biết cách xây dựng prompt có cấu trúc, cung cấp ngữ cảnh đầy đủ và sử dụng các kỹ thuật nâng cao để nhận được kết quả chính xác, chi tiết và phù hợp hơn với mục tiêu học tập.
 </p>
 
 <a class="btn"
 href="https://drive.google.com/drive/folders/1cmygrcLdrPaaOXl0o3BE1ohTZaPOfarh?usp=sharing"
 target="_blank">
-🔗 Xem minh chứng trên Google Drive
+📂 Xem sản phẩm bài tập
 </a>
 
 <br><br>
 
-<a class="back-btn" href="index.html">
+<a href="index.html" class="back-btn">
 🏠 Quay lại Portfolio
 </a>
 
