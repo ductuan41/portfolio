@@ -199,6 +199,39 @@ max-width:1100px;
 .card:hover{
 transform:scale(1.05);
 }
+a{
+    text-decoration:none;
+}
+
+.detail-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    margin-top:15px;
+    padding:12px 22px;
+
+    background:linear-gradient(
+        135deg,
+        #38bdf8,
+        #2563eb
+    );
+
+    color:white;
+    font-weight:700;
+    font-size:16px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+
+    transition:.3s;
+}
+
+.detail-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+}
 
 .card h3{
 color:#2563eb;
@@ -321,7 +354,40 @@ border-radius:10px;
 transition:0.3s;
 }
 
-.card a:hover{
+.card a:hover{ 
+    .detail-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+
+    margin-top:15px;
+    padding:12px 22px;
+
+    background:linear-gradient(
+        135deg,
+        #38bdf8,
+        #2563eb
+    );
+
+    color:white;
+    font-weight:700;
+    font-size:16px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+
+    transition:.3s;
+}
+
+.detail-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(37,99,235,.35);
+}a{
+    text-decoration:none;
+}
 transform:scale(1.05);
 }
     .summary-section{
@@ -448,8 +514,8 @@ Xem bài tập
 Rèn luyện kỹ năng tạo, quản lý, sao chép, di chuyển và xóa tệp tin, thư mục trên Windows.
 </p>
 
-<a href="bai1.html">
-📖 Xem chi tiết
+<a href="bai1.html" class="detail-btn">
+    📖 Xem chi tiết
 </a>
 </div>
 
@@ -460,8 +526,8 @@ Rèn luyện kỹ năng tạo, quản lý, sao chép, di chuyển và xóa tệp
 Tìm kiếm tài liệu học thuật từ các nguồn uy tín và đánh giá độ tin cậy của thông tin.
 </p>
 
-<a href="bai2.html">
-📖 Xem chi tiết
+<a href="bai2.html" class="detail-btn">
+    📖 Xem chi tiết
 </a>
 </div>
 <div class="card">
@@ -471,8 +537,8 @@ Tìm kiếm tài liệu học thuật từ các nguồn uy tín và đánh giá 
 Thực hành thiết kế prompt từ cơ bản đến nâng cao để khai thác hiệu quả các công cụ AI.
 </p>
 
-<a href="bai3.html">
-📖 Xem chi tiết
+<a href="bai3.html" class="detail-btn">
+    📖 Xem chi tiết
 </a>
 </div>
 
@@ -483,8 +549,8 @@ Thực hành thiết kế prompt từ cơ bản đến nâng cao để khai thá
 Sử dụng Trello, Google Docs, Google Drive và các công cụ giao tiếp để quản lý dự án nhóm.
 </p>
 
-<a href="bai4.html">
-📖 Xem chi tiết
+<a href="bai4.html" class="detail-btn">
+    📖 Xem chi tiết
 </a>
 </div>
     <div class="card">
@@ -493,8 +559,8 @@ Sử dụng Trello, Google Docs, Google Drive và các công cụ giao tiếp đ
 Ứng dụng AI trong thiết kế infographic và sáng tạo nội dung số.
 </p>
 
-<a href="bai5.html">
-📖 Xem chi tiết
+<a href="bai5.html" class="detail-btn">
+    📖 Xem chi tiết
 </a>
 </div>
     <div class="card">
@@ -504,8 +570,8 @@ Sử dụng Trello, Google Docs, Google Drive và các công cụ giao tiếp đ
 Nghiên cứu các nguyên tắc đạo đức và trách nhiệm khi ứng dụng AI trong học thuật.
 </p>
 
-<a href="bai6.html">
-📖 Xem chi tiết
+<a href="bai6.html" class="detail-btn">
+    📖 Xem chi tiết
 </a>
 </div>
 </div>
