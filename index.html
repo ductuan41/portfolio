@@ -51,10 +51,15 @@ z-index:1000;
 }
 
 .logo{
-color:white;
-font-size:1.2rem;
-font-weight:400;
-white-space:nowrap;
+    color:white;
+    font-size:1.3rem;
+    font-weight:400;
+    white-space:nowrap;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
 }
 
 nav{
@@ -272,7 +277,32 @@ border-radius:10px;
 .contact{
 text-align:center;
 }
+.timeline{
+max-width:800px;
+width:100%;
+}
 
+.timeline-item{
+background:#1e293b;
+padding:20px;
+margin-bottom:20px;
+border-left:5px solid #38bdf8;
+border-radius:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+#timeline{
+min-height:auto;
+padding:50px 10% 20px;
+}
+
+#contact{
+min-height:auto;
+padding:20px 10% 40px;
+}
 footer{
 margin-top:80px;
 padding:35px;
@@ -446,6 +476,22 @@ padding:40px;
     .card{
         padding:20px;
     }
+}
+    @media(max-width:768px){
+
+    .logo{
+        font-size:0.9rem;
+    }
+
+    nav{
+        padding:15px;
+    }
+
+    nav a{
+        font-size:13px;
+        padding:6px 8px;
+    }
+
 }
 </style>
 </head>
@@ -639,7 +685,7 @@ Quản lý Giải trí và Sự kiện trong tương lai.
 </section>
 <section id="contact">
 
-<h2 class="title">📞Liên Hệ</h2>
+<h2 class="title">📞 Liên Hệ</h2>
 
 <div class="contact">
 
